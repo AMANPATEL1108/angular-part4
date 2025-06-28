@@ -44,4 +44,12 @@ export class App {
     console.log(name);
     return name;
   }
+
+  numbers: number[] = [];
+
+  constructor() {
+    for (let i = 1; i <= 100; i++) {
+      this.numbers.push(i);
+    }
+  }
 }

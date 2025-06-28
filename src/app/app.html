@@ -56,8 +56,15 @@
 
 <hr>
 
+
+
+
+
 @for (user of students;track user;let id=$index) {
   <h3>{{id+1}}--{{user.name}}--{{user.age}}--{{user.city}}</h3>
   <button (click)="getName(user.name)">Get name</button>
 }
 
+@for(number of numbers;track number;let id=$index){
+  <h4>{{number}}</h4>
+}
